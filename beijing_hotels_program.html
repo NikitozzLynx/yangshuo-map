@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2057b7a6af70a72b22ed4e61b1837f69 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2057b7a6af70a72b22ed4e61b1837f69" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2057b7a6af70a72b22ed4e61b1837f69 = L.map(
+                "map_2057b7a6af70a72b22ed4e61b1837f69",
+                {
+                    center: [39.9, 116.4],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6c3f2238ef949867bd9e1347d77d3d8d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var marker_6cd2a026c81c0b96f86e071f5117bbb4 = L.marker(
+                [39.8874, 116.3945],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_34c21a4349176d20d66780575da12d41 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hotel", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6cd2a026c81c0b96f86e071f5117bbb4.setIcon(icon_34c21a4349176d20d66780575da12d41);
+        
+    
+        var popup_9ea0c7145ad36052bce1bb894357dbf1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_785bb9213f7777776024446830a20629 = $(`<div id="html_785bb9213f7777776024446830a20629" style="width: 100.0%; height: 100.0%;">James Joyce Coffetel</div>`)[0];
+            popup_9ea0c7145ad36052bce1bb894357dbf1.setContent(html_785bb9213f7777776024446830a20629);
+        
+
+        marker_6cd2a026c81c0b96f86e071f5117bbb4.bindPopup(popup_9ea0c7145ad36052bce1bb894357dbf1)
+        ;
+
+        
+    
+    
+            var marker_7de77f686a6505c3fb6b528648f42455 = L.marker(
+                [39.908, 116.4674],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_b590c3ea72381c95f2fe23c2322f71b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "hotel", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_7de77f686a6505c3fb6b528648f42455.setIcon(icon_b590c3ea72381c95f2fe23c2322f71b4);
+        
+    
+        var popup_e80aa82e88524910f1c5ef529434fb11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7f745655c972b2012a95fb2df7c4c320 = $(`<div id="html_7f745655c972b2012a95fb2df7c4c320" style="width: 100.0%; height: 100.0%;">Color and Light Hotel</div>`)[0];
+            popup_e80aa82e88524910f1c5ef529434fb11.setContent(html_7f745655c972b2012a95fb2df7c4c320);
+        
+
+        marker_7de77f686a6505c3fb6b528648f42455.bindPopup(popup_e80aa82e88524910f1c5ef529434fb11)
+        ;
+
+        
+    
+    
+            var marker_7a40b65c9092e7481054f252e9198a1d = L.marker(
+                [39.9087, 116.3975],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_f3787a54caa5ef8920c3404a4afe028b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7a40b65c9092e7481054f252e9198a1d.setIcon(icon_f3787a54caa5ef8920c3404a4afe028b);
+        
+    
+        var popup_628f28241ff1975fb33373e617865054 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_392fb6bedc95dab6f058ffae3eeb08eb = $(`<div id="html_392fb6bedc95dab6f058ffae3eeb08eb" style="width: 100.0%; height: 100.0%;">Тяньаньмэнь</div>`)[0];
+            popup_628f28241ff1975fb33373e617865054.setContent(html_392fb6bedc95dab6f058ffae3eeb08eb);
+        
+
+        marker_7a40b65c9092e7481054f252e9198a1d.bindPopup(popup_628f28241ff1975fb33373e617865054)
+        ;
+
+        
+    
+    
+            var marker_327f3be54420e19276f137e42d7f81f2 = L.marker(
+                [39.9163, 116.3972],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_867e67041482122a55982600cfdca9bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_327f3be54420e19276f137e42d7f81f2.setIcon(icon_867e67041482122a55982600cfdca9bc);
+        
+    
+        var popup_2652b8cb2517f6f47db5014e9d6b0888 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c6fb0ba94aa439eb5ec0393efa0c2a91 = $(`<div id="html_c6fb0ba94aa439eb5ec0393efa0c2a91" style="width: 100.0%; height: 100.0%;">Запретный город</div>`)[0];
+            popup_2652b8cb2517f6f47db5014e9d6b0888.setContent(html_c6fb0ba94aa439eb5ec0393efa0c2a91);
+        
+
+        marker_327f3be54420e19276f137e42d7f81f2.bindPopup(popup_2652b8cb2517f6f47db5014e9d6b0888)
+        ;
+
+        
+    
+    
+            var marker_2d47e65ea549973a55f73806d5e096f6 = L.marker(
+                [39.923, 116.397],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_f97d5939015cc0de073ad8400e0b8379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_2d47e65ea549973a55f73806d5e096f6.setIcon(icon_f97d5939015cc0de073ad8400e0b8379);
+        
+    
+        var popup_9f8bceef09cf18134a209cb183a07981 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bb9f26785c5518f2d9065fd97b57d694 = $(`<div id="html_bb9f26785c5518f2d9065fd97b57d694" style="width: 100.0%; height: 100.0%;">Парк Цзиншань</div>`)[0];
+            popup_9f8bceef09cf18134a209cb183a07981.setContent(html_bb9f26785c5518f2d9065fd97b57d694);
+        
+
+        marker_2d47e65ea549973a55f73806d5e096f6.bindPopup(popup_9f8bceef09cf18134a209cb183a07981)
+        ;
+
+        
+    
+    
+            var marker_1a1f2c6d46888cc792428546f1e56bb3 = L.marker(
+                [39.924, 116.3838],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_ab4ab13552c590b46c1dc088fce7e820 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1a1f2c6d46888cc792428546f1e56bb3.setIcon(icon_ab4ab13552c590b46c1dc088fce7e820);
+        
+    
+        var popup_fd267e1a63287645cd6d72550db07cec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab806d7f0138749c4baf8894ffcb2e5f = $(`<div id="html_ab806d7f0138749c4baf8894ffcb2e5f" style="width: 100.0%; height: 100.0%;">Парк Бэйхай</div>`)[0];
+            popup_fd267e1a63287645cd6d72550db07cec.setContent(html_ab806d7f0138749c4baf8894ffcb2e5f);
+        
+
+        marker_1a1f2c6d46888cc792428546f1e56bb3.bindPopup(popup_fd267e1a63287645cd6d72550db07cec)
+        ;
+
+        
+    
+    
+            var marker_9db0769ccdb9788e317afe33d91c0048 = L.marker(
+                [39.9057, 116.3976],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_68afac8f3c70490329274679413ade0f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9db0769ccdb9788e317afe33d91c0048.setIcon(icon_68afac8f3c70490329274679413ade0f);
+        
+    
+        var popup_ae57e1eec9c0fc7aa0d02aa2a38289b0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_46b2cf9fd74183229b34d7323ce33faa = $(`<div id="html_46b2cf9fd74183229b34d7323ce33faa" style="width: 100.0%; height: 100.0%;">Национальный музей</div>`)[0];
+            popup_ae57e1eec9c0fc7aa0d02aa2a38289b0.setContent(html_46b2cf9fd74183229b34d7323ce33faa);
+        
+
+        marker_9db0769ccdb9788e317afe33d91c0048.bindPopup(popup_ae57e1eec9c0fc7aa0d02aa2a38289b0)
+        ;
+
+        
+    
+    
+            var marker_4034845f5675a41728a589ddbb84b199 = L.marker(
+                [39.9996, 116.2755],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_ab637c42081bfaecc3ffe445f7266600 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_4034845f5675a41728a589ddbb84b199.setIcon(icon_ab637c42081bfaecc3ffe445f7266600);
+        
+    
+        var popup_1d89bbbaeba7c22cb0fc07635ac96f60 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a11233a8912aa6101ea5d00338352055 = $(`<div id="html_a11233a8912aa6101ea5d00338352055" style="width: 100.0%; height: 100.0%;">Летний дворец</div>`)[0];
+            popup_1d89bbbaeba7c22cb0fc07635ac96f60.setContent(html_a11233a8912aa6101ea5d00338352055);
+        
+
+        marker_4034845f5675a41728a589ddbb84b199.bindPopup(popup_1d89bbbaeba7c22cb0fc07635ac96f60)
+        ;
+
+        
+    
+    
+            var marker_89bc5917349ddbfd92bff9ee0ff3212b = L.marker(
+                [39.8822, 116.4066],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_f7cb47c578cb65e965db2f083bed7032 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_89bc5917349ddbfd92bff9ee0ff3212b.setIcon(icon_f7cb47c578cb65e965db2f083bed7032);
+        
+    
+        var popup_747663daf6ac14f44a9475d9300db091 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f519dad6ddc587bb31226a6739012d10 = $(`<div id="html_f519dad6ddc587bb31226a6739012d10" style="width: 100.0%; height: 100.0%;">Храм Неба</div>`)[0];
+            popup_747663daf6ac14f44a9475d9300db091.setContent(html_f519dad6ddc587bb31226a6739012d10);
+        
+
+        marker_89bc5917349ddbfd92bff9ee0ff3212b.bindPopup(popup_747663daf6ac14f44a9475d9300db091)
+        ;
+
+        
+    
+    
+            var marker_ea52602132008ede468f4cb4c97fc1c3 = L.marker(
+                [39.9406, 116.3846],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_912a429905aec5b13d2658a98098bfb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ea52602132008ede468f4cb4c97fc1c3.setIcon(icon_912a429905aec5b13d2658a98098bfb7);
+        
+    
+        var popup_68fcfdd322710d53bb9b9c4d06ae8f1c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f746c2750439b89f4dd9d818d9132df0 = $(`<div id="html_f746c2750439b89f4dd9d818d9132df0" style="width: 100.0%; height: 100.0%;">Хоухай</div>`)[0];
+            popup_68fcfdd322710d53bb9b9c4d06ae8f1c.setContent(html_f746c2750439b89f4dd9d818d9132df0);
+        
+
+        marker_ea52602132008ede468f4cb4c97fc1c3.bindPopup(popup_68fcfdd322710d53bb9b9c4d06ae8f1c)
+        ;
+
+        
+    
+    
+            var marker_649fa9f1ff331019ea26085ccdf89025 = L.marker(
+                [39.9841, 116.4976],
+                {}
+            ).addTo(map_2057b7a6af70a72b22ed4e61b1837f69);
+        
+    
+            var icon_9db11ddef57a5ffec398f628f941b0e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "map-marker", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_649fa9f1ff331019ea26085ccdf89025.setIcon(icon_9db11ddef57a5ffec398f628f941b0e6);
+        
+    
+        var popup_23e3730c24e70cab4a8dff7bbc1385ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_901127cea05348c5b9a3865c1ac286d6 = $(`<div id="html_901127cea05348c5b9a3865c1ac286d6" style="width: 100.0%; height: 100.0%;">798 Арт-дистрикт</div>`)[0];
+            popup_23e3730c24e70cab4a8dff7bbc1385ec.setContent(html_901127cea05348c5b9a3865c1ac286d6);
+        
+
+        marker_649fa9f1ff331019ea26085ccdf89025.bindPopup(popup_23e3730c24e70cab4a8dff7bbc1385ec)
+        ;
+
+        
+    
+</script>
+</html>

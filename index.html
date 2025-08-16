@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travel Maps</title>
+  <style>
+    :root { --maxw: 980px; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif; background: #0f1115; color: #eaecef; }
+    header { padding: 28px 16px 8px; text-align: center; }
+    h1 { margin: 0 0 6px; font-size: 28px; }
+    p.lead { margin: 0; opacity: .8; }
+    main { max-width: var(--maxw); margin: 24px auto 64px; padding: 0 16px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; }
+    .card { background: #151a21; border: 1px solid #222631; border-radius: 14px; padding: 18px; display: flex; flex-direction: column; gap: 12px; transition: transform .12s ease, border-color .12s ease; }
+    .card:hover { transform: translateY(-2px); border-color: #2e7df6; }
+    .title { font-weight: 600; font-size: 18px; }
+    .meta { font-size: 13px; opacity: .75; }
+    .actions { margin-top: auto; display: flex; gap: 10px; flex-wrap: wrap; }
+    a.btn { text-decoration: none; padding: 10px 14px; border-radius: 10px; border: 1px solid #2e7df6; }
+    a.primary { background: #2e7df6; color: white; }
+    a.ghost { color: #c7d1e0; }
+    footer { text-align: center; opacity: .65; font-size: 13px; padding: 28px 0 40px; }
+    .hint { font-size: 12px; opacity: .7; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Карты поездки</h1>
+    <p class="lead">Открывайте интерактивные карты с телефона или ноутбука</p>
+  </header>
+  <main>
+    <section class="grid">
+      <article class="card">
+        <div class="title">Yangshuo Map</div>
+        <div class="meta">Маршруты 28–29.08, пирс, West Street, Moon Hill и др.</div>
+        <div class="actions">
+          <a class="btn primary" href="yangshuo_program_map.html">Открыть карту</a>
+          <a class="btn ghost" href="yangshuo_program_map.html" target="_blank" rel="noopener">Открыть в новой вкладке</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="title">Beijing Hotels & Sights</div>
+        <div class="meta">Отели и точки: Тяньаньмэнь, Запретный город, Бэйхай, 798 и др.</div>
+        <div class="actions">
+          <a class="btn primary" href="beijing_hotels_program.html">Открыть карту</a>
+          <a class="btn ghost" href="beijing_hotels_program.html" target="_blank" rel="noopener">Открыть в новой вкладке</a>
+        </div>
+      </article>
+    </section>
+    <p class="hint" style="margin-top:18px;">Подсказка: если ссылка не грузит подложку карты — проверьте интернет (тайлы и скрипты тянутся с CDN).</p>
+  </main>
+  <footer>© {year} Travel Maps</footer>
+  <script>
+    document.querySelector('footer').innerHTML = '© ' + new Date().getFullYear() + ' Travel Maps';
+  </script>
+</body>
+</html>
