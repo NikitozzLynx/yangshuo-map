@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4d4a2bf295bd1d87c12047547b87e098 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4d4a2bf295bd1d87c12047547b87e098" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4d4a2bf295bd1d87c12047547b87e098 = L.map(
+                "map_4d4a2bf295bd1d87c12047547b87e098",
+                {
+                    center: [24.78, 110.49],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_eb05641489af895b0cc97b6b1cabddd5 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var marker_e226977827a9a80c31e1811f328cdfbb = L.marker(
+                [24.7789, 110.494],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_a446c48d3571fe807d615a7435bd2a04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ship", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e226977827a9a80c31e1811f328cdfbb.setIcon(icon_a446c48d3571fe807d615a7435bd2a04);
+        
+    
+        var popup_6523b1921c546d0b7d0a5cd44d8b6a6f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ec10c5d34b1399a2490e7a702fbc3ebc = $(`<div id="html_ec10c5d34b1399a2490e7a702fbc3ebc" style="width: 100.0%; height: 100.0%;">Shuidongmen Pier (水东门码头)</div>`)[0];
+            popup_6523b1921c546d0b7d0a5cd44d8b6a6f.setContent(html_ec10c5d34b1399a2490e7a702fbc3ebc);
+        
+
+        marker_e226977827a9a80c31e1811f328cdfbb.bindPopup(popup_6523b1921c546d0b7d0a5cd44d8b6a6f)
+        ;
+
+        
+    
+    
+            var marker_17de98a6b65a829dcd578d566ddf4c3c = L.marker(
+                [24.836, 110.43],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_6b310c4797fef799a4503741610cf4a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_17de98a6b65a829dcd578d566ddf4c3c.setIcon(icon_6b310c4797fef799a4503741610cf4a8);
+        
+    
+        var popup_9d5e10be6e9de2c4ff5254f27ea08160 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b106fdbe69cb24bc9389e89993eaf5ef = $(`<div id="html_b106fdbe69cb24bc9389e89993eaf5ef" style="width: 100.0%; height: 100.0%;">Chaoyang Village (гестхаус)</div>`)[0];
+            popup_9d5e10be6e9de2c4ff5254f27ea08160.setContent(html_b106fdbe69cb24bc9389e89993eaf5ef);
+        
+
+        marker_17de98a6b65a829dcd578d566ddf4c3c.bindPopup(popup_9d5e10be6e9de2c4ff5254f27ea08160)
+        ;
+
+        
+    
+    
+            var marker_9752c26eacbc2b91af34aacdd2a6f5c7 = L.marker(
+                [24.835, 110.432],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_15f77a8c61a79efa90b4384059f69ecf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "flag", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9752c26eacbc2b91af34aacdd2a6f5c7.setIcon(icon_15f77a8c61a79efa90b4384059f69ecf);
+        
+    
+        var popup_21e29483266b7975a9a1eda378ae2ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_357205e1ac348332cb3a31c54f642d9e = $(`<div id="html_357205e1ac348332cb3a31c54f642d9e" style="width: 100.0%; height: 100.0%;">Chun Ji Farmhouse (обед)</div>`)[0];
+            popup_21e29483266b7975a9a1eda378ae2ff4.setContent(html_357205e1ac348332cb3a31c54f642d9e);
+        
+
+        marker_9752c26eacbc2b91af34aacdd2a6f5c7.bindPopup(popup_21e29483266b7975a9a1eda378ae2ff4)
+        ;
+
+        
+    
+    
+            var marker_ef00d30e9b74586dee49d318fef69ea7 = L.marker(
+                [24.7823, 110.4945],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_9ad83d945bddd410ff1c0a5fc2f426c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ef00d30e9b74586dee49d318fef69ea7.setIcon(icon_9ad83d945bddd410ff1c0a5fc2f426c3);
+        
+    
+        var popup_0e64f5fa8aa97ced3bd2edbf70c270f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_34655a001f2af295616c956522b087ef = $(`<div id="html_34655a001f2af295616c956522b087ef" style="width: 100.0%; height: 100.0%;">Yangshuo Park (阳朔公园)</div>`)[0];
+            popup_0e64f5fa8aa97ced3bd2edbf70c270f1.setContent(html_34655a001f2af295616c956522b087ef);
+        
+
+        marker_ef00d30e9b74586dee49d318fef69ea7.bindPopup(popup_0e64f5fa8aa97ced3bd2edbf70c270f1)
+        ;
+
+        
+    
+    
+            var marker_fe8f96dc065ae53e145570a4d4c1fc8b = L.marker(
+                [24.7806, 110.4909],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_74b2ebcd617774f7488558a0b6da8f2a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "road", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_fe8f96dc065ae53e145570a4d4c1fc8b.setIcon(icon_74b2ebcd617774f7488558a0b6da8f2a);
+        
+    
+        var popup_cb846b6983437476a59dfda7f6ece25a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8ff6776d52835b8d285fc4c4d9cc6221 = $(`<div id="html_8ff6776d52835b8d285fc4c4d9cc6221" style="width: 100.0%; height: 100.0%;">West Street (西街)</div>`)[0];
+            popup_cb846b6983437476a59dfda7f6ece25a.setContent(html_8ff6776d52835b8d285fc4c4d9cc6221);
+        
+
+        marker_fe8f96dc065ae53e145570a4d4c1fc8b.bindPopup(popup_cb846b6983437476a59dfda7f6ece25a)
+        ;
+
+        
+    
+    
+            var marker_ed9ca6177a493b1a7fe4f5a958b5cb76 = L.marker(
+                [24.781, 110.4928],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_f65cad8c5710fb0a4f1e10bc44ae3aac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cutlery", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_ed9ca6177a493b1a7fe4f5a958b5cb76.setIcon(icon_f65cad8c5710fb0a4f1e10bc44ae3aac);
+        
+    
+        var popup_b25f2cbbdc1cd33d6b2e39a05f662118 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7e4228c7f9bf99ce5cdf676a05a7fe00 = $(`<div id="html_7e4228c7f9bf99ce5cdf676a05a7fe00" style="width: 100.0%; height: 100.0%;">Mood Rooftop (ужин)</div>`)[0];
+            popup_b25f2cbbdc1cd33d6b2e39a05f662118.setContent(html_7e4228c7f9bf99ce5cdf676a05a7fe00);
+        
+
+        marker_ed9ca6177a493b1a7fe4f5a958b5cb76.bindPopup(popup_b25f2cbbdc1cd33d6b2e39a05f662118)
+        ;
+
+        
+    
+    
+            var marker_34a0f7032f3f2b25db273e59d7666794 = L.marker(
+                [24.7607, 110.4949],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_6a6235102beb50902b2e69d4460e1736 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "music", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_34a0f7032f3f2b25db273e59d7666794.setIcon(icon_6a6235102beb50902b2e69d4460e1736);
+        
+    
+        var popup_943de3342c3ff848c0052a2c1a5c3c41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_65bd0832cf94daa769d499f02a80e02b = $(`<div id="html_65bd0832cf94daa769d499f02a80e02b" style="width: 100.0%; height: 100.0%;">Impression Liu Sanjie Theatre (印象刘三姐)</div>`)[0];
+            popup_943de3342c3ff848c0052a2c1a5c3c41.setContent(html_65bd0832cf94daa769d499f02a80e02b);
+        
+
+        marker_34a0f7032f3f2b25db273e59d7666794.bindPopup(popup_943de3342c3ff848c0052a2c1a5c3c41)
+        ;
+
+        
+    
+    
+            var marker_adb1935081c0e819be305b6344d00d31 = L.marker(
+                [24.6908, 110.4955],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_f0a95367d35c9697772d2ed698e98e40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "glyphicon glyphicon-triangle-top", "iconColor": "white", "markerColor": "darkred", "prefix": "fa"}
+            );
+            marker_adb1935081c0e819be305b6344d00d31.setIcon(icon_f0a95367d35c9697772d2ed698e98e40);
+        
+    
+        var popup_52acf5334477ffde3d5d2fa8659618d7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7505caf46a91b3b7398092c218319e0d = $(`<div id="html_7505caf46a91b3b7398092c218319e0d" style="width: 100.0%; height: 100.0%;">Ruyi Peak Cableway (如意峰·高田)</div>`)[0];
+            popup_52acf5334477ffde3d5d2fa8659618d7.setContent(html_7505caf46a91b3b7398092c218319e0d);
+        
+
+        marker_adb1935081c0e819be305b6344d00d31.bindPopup(popup_52acf5334477ffde3d5d2fa8659618d7)
+        ;
+
+        
+    
+    
+            var marker_d11ef769e858cf81e8be7617dfe3b7c8 = L.marker(
+                [24.813, 110.44],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_ab761f67a10c7977bd28c57bad4d545b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "leaf", "iconColor": "white", "markerColor": "darkpurple", "prefix": "fa"}
+            );
+            marker_d11ef769e858cf81e8be7617dfe3b7c8.setIcon(icon_ab761f67a10c7977bd28c57bad4d545b);
+        
+    
+        var popup_c23a5df1a890565ab10222b77137f569 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_45e6315c0345ea247888b2d880954b0d = $(`<div id="html_45e6315c0345ea247888b2d880954b0d" style="width: 100.0%; height: 100.0%;">Xiatang Village (下塘村·遇龙河)</div>`)[0];
+            popup_c23a5df1a890565ab10222b77137f569.setContent(html_45e6315c0345ea247888b2d880954b0d);
+        
+
+        marker_d11ef769e858cf81e8be7617dfe3b7c8.bindPopup(popup_c23a5df1a890565ab10222b77137f569)
+        ;
+
+        
+    
+    
+            var marker_848bad0e55ab65954b15511d9f5b918b = L.marker(
+                [24.857, 110.425],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_e8d17fe47d3f1bce7d6f03e53abc02cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tree-conifer", "iconColor": "white", "markerColor": "darkgreen", "prefix": "fa"}
+            );
+            marker_848bad0e55ab65954b15511d9f5b918b.setIcon(icon_e8d17fe47d3f1bce7d6f03e53abc02cb);
+        
+    
+        var popup_1864a1592ff3cc2f4fe2573b04660d95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_39ab194b748ad8fb39c461b89a0fa552 = $(`<div id="html_39ab194b748ad8fb39c461b89a0fa552" style="width: 100.0%; height: 100.0%;">Jiuxian Village (旧县村·遇龙河)</div>`)[0];
+            popup_1864a1592ff3cc2f4fe2573b04660d95.setContent(html_39ab194b748ad8fb39c461b89a0fa552);
+        
+
+        marker_848bad0e55ab65954b15511d9f5b918b.bindPopup(popup_1864a1592ff3cc2f4fe2573b04660d95)
+        ;
+
+        
+    
+    
+            var marker_435f28e80ac79a9e03892ba57ff6b662 = L.marker(
+                [24.7622, 110.4898],
+                {}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            var icon_3a5f991be9f9a267785a70ef338e2041 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "lightgray", "prefix": "fa"}
+            );
+            marker_435f28e80ac79a9e03892ba57ff6b662.setIcon(icon_3a5f991be9f9a267785a70ef338e2041);
+        
+    
+        var popup_9ee556c1397b871a43aff041cede3392 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c8b73266958af69f389d08fa92c212a9 = $(`<div id="html_c8b73266958af69f389d08fa92c212a9" style="width: 100.0%; height: 100.0%;">Moon Hill (月亮山)</div>`)[0];
+            popup_9ee556c1397b871a43aff041cede3392.setContent(html_c8b73266958af69f389d08fa92c212a9);
+        
+
+        marker_435f28e80ac79a9e03892ba57ff6b662.bindPopup(popup_9ee556c1397b871a43aff041cede3392)
+        ;
+
+        
+    
+    
+            var poly_line_56b640d9378b0db6f2867934838a6468 = L.polyline(
+                [[24.7789, 110.494], [24.836, 110.43]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_56b640d9378b0db6f2867934838a6468.bindTooltip(
+                `<div>
+                     Маршрут 28.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_51f78df631e7cfb04f6de9e5224bcde3 = L.polyline(
+                [[24.836, 110.43], [24.835, 110.432]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_51f78df631e7cfb04f6de9e5224bcde3.bindTooltip(
+                `<div>
+                     Маршрут 28.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_c1357739970e5ef3b95ac8c915ad7ffd = L.polyline(
+                [[24.835, 110.432], [24.7823, 110.4945]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_c1357739970e5ef3b95ac8c915ad7ffd.bindTooltip(
+                `<div>
+                     Маршрут 28.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_4c6d8e39188069ef3fb5a37194723475 = L.polyline(
+                [[24.7823, 110.4945], [24.7806, 110.4909]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_4c6d8e39188069ef3fb5a37194723475.bindTooltip(
+                `<div>
+                     Маршрут 28.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_887935c4a1cfb0b419e38f20885e42cd = L.polyline(
+                [[24.7806, 110.4909], [24.781, 110.4928]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_887935c4a1cfb0b419e38f20885e42cd.bindTooltip(
+                `<div>
+                     Маршрут 28.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_66f8524259e765cfa1a5b8eab2adbcc2 = L.polyline(
+                [[24.781, 110.4928], [24.7607, 110.4949]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_66f8524259e765cfa1a5b8eab2adbcc2.bindTooltip(
+                `<div>
+                     Маршрут 28.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_78f223b3fb2fb172cddf59772c4e2b49 = L.polyline(
+                [[24.836, 110.43], [24.6908, 110.4955]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "5,10", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_78f223b3fb2fb172cddf59772c4e2b49.bindTooltip(
+                `<div>
+                     Маршрут 29.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_29e643c4be218c8cf92168131d68c6f7 = L.polyline(
+                [[24.6908, 110.4955], [24.813, 110.44]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "5,10", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_29e643c4be218c8cf92168131d68c6f7.bindTooltip(
+                `<div>
+                     Маршрут 29.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_8d3240370fcb0372fad0804ea7de8117 = L.polyline(
+                [[24.813, 110.44], [24.857, 110.425]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "5,10", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_8d3240370fcb0372fad0804ea7de8117.bindTooltip(
+                `<div>
+                     Маршрут 29.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_103ce345e7343f055c0e9905ed33ae6e = L.polyline(
+                [[24.857, 110.425], [24.7622, 110.4898]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "5,10", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_103ce345e7343f055c0e9905ed33ae6e.bindTooltip(
+                `<div>
+                     Маршрут 29.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_caa38259ee9c71c261ff2980ba5cf59e = L.polyline(
+                [[24.7622, 110.4898], [24.836, 110.43]],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": "5,10", "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_4d4a2bf295bd1d87c12047547b87e098);
+        
+    
+            poly_line_caa38259ee9c71c261ff2980ba5cf59e.bindTooltip(
+                `<div>
+                     Маршрут 29.08
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
